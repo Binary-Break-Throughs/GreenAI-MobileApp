@@ -26,6 +26,7 @@ function HomeScreen() {
   };
 
   return (
+    // AFTER ONBOARDING IS DONE, THIS IS DISPLAYED
     <View style={styles.container}>
       <Text>Home Screen</Text>
       <Text>User is logged in!</Text>
