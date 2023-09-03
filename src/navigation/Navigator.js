@@ -11,7 +11,7 @@ const Tab = createBottomTabNavigator();
 const BottomTabNavigator = () => {
     return(
         <Tab.Navigator
-            tabBarOptions={{
+            screenOptions={{
                 style:{
                     height:65,
                     justifyContent:"center",
@@ -77,7 +77,7 @@ const screenOptionStyle = {
 const HomeStackNavigator = () => {
     return(
         <Stack.Navigator screenOptions={screenOptionStyle}>
-            <Stack.Screen name="Home" component={BottomTabNavigator}/>
+            <Stack.Screen name="HomePage" component={BottomTabNavigator}/>
             <Stack.Screen name="Detail" component={Detail}/>
         </Stack.Navigator>
     )

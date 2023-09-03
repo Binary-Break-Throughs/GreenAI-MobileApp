@@ -148,7 +148,7 @@ function Root() {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}    >
         {isLoggedIn ? (
-          <Stack.Screen name="Home" component={HomeScreen} />
+          <Stack.Screen name="Start" component={HomeScreen} />
           
         ) : (
           <>
