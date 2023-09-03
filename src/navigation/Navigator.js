@@ -4,7 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 import Home from '../screens/Home'
 import Detail from '../screens/Detail'
 import Favourite from '../screens/Dashboard'
-import Profile from '../screens/Profile'
+import Chatbot from '../screens/Chatbot'
 import {Image} from 'react-native'
 
 const Tab = createBottomTabNavigator();
@@ -26,6 +26,7 @@ const BottomTabNavigator = () => {
                 component={Home}
                 options={{
                     tabBarLabel:"",
+                    headerShown: false,
                     tabBarIcon:({color, size}) => (
                         <Image
                             source={require("../images/8.png")}
@@ -40,6 +41,7 @@ const BottomTabNavigator = () => {
                 component={Favourite}
                 options={{
                     tabBarLabel:"",
+                    headerShown: false,
                     tabBarIcon:({color, size}) => (
                         <Image
                             source={require("../images/dashboard-solid-24.png")}
@@ -49,10 +51,11 @@ const BottomTabNavigator = () => {
                 }}
             />
             <Tab.Screen
-                name="Profile"
-                component={Profile}
+                name="Chatbot"
+                component={Chatbot}
                 options={{
                     tabBarLabel:"",
+                    headerShown: false,
                     tabBarIcon:({color, size}) => (
                         <Image
                             source={require("../images/chat-regular-24.png")}

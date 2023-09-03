@@ -1,15 +1,15 @@
 import React from 'react'
 import {View, Text} from 'react-native'
 
-const Profile = () => {
+const Chatbot = () => {
     return(
         <View style={{
             justifyContent:"center",
             alignContent:"center",
             flex:1
         }}>
-            <Text style={{}}>Profile</Text>
+            <Text style={{}}>ChatBot</Text>
         </View>
     )
 }
-export default Profile;
+export default Chatbot;

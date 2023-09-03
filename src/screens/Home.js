@@ -13,7 +13,8 @@ const Home = ({navigation}) => {
             <View style={{
                    flexDirection:"row",
                    width:"100%",
-                   alignItems:"center"
+                   alignItems:"center",
+                   paddingTop:40,
                }}>
                    <View style={{width:"50%"}}> 
                     <Text style={{
@@ -89,7 +90,7 @@ const Home = ({navigation}) => {
                <View style={{
                    backgroundColor:"#FFF",
                    paddingVertical:8,
-                   paddingHorizontal:20,
+                   paddingHorizontal:30,
                    marginHorizontal:80,
                    borderRadius:15,
                    marginTop:25,
@@ -288,7 +289,7 @@ const Home = ({navigation}) => {
                                 fontWeight:"bold",
                                 fontSize:13,
                                 color:"#FFF"
-                            }}>Order</Text>
+                            }}>Add</Text>
                         </View>
                    </View>
                </View>

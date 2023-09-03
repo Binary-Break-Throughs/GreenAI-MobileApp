@@ -4,6 +4,7 @@ import AuthProvider from "./src/navigation/AuthProvider";
 import Root from "./src/navigation/Root";
 
 export default function App() {
+
   return (
     // <View style={styles.container}>
     //   <Text>Open up App.js to start working</Text>
