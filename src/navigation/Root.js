@@ -17,21 +17,23 @@ import { createStackNavigator } from "@react-navigation/stack";
 import AsyncStorage, {
   useAsyncStorage,
 } from "@react-native-async-storage/async-storage";
+import HomeStackNavigator from "./Navigator";
 
-function HomeScreen() {
+
+function HomeScreen({navigation}) {
   const { setIsLoggedIn } = React.useContext(AuthContext);
   const logout = async () => {
     await AsyncStorage.removeItem("@token");
     setIsLoggedIn(false);
   };
+  const { getItem } = useAsyncStorage("@token");
 
   return (
     // AFTER ONBOARDING IS DONE, THIS IS DISPLAYED
-    <View style={styles.container}>
-      <Text>Home Screen</Text>
-      <Text>User is logged in!</Text>
-      <Button onPress={logout} title="LOGOUT" />
-    </View>
+    <HomeStackNavigator/>
+   
+      
+    
   );
 }
 
@@ -142,10 +144,10 @@ function Root() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator
-screenOptions={{headerShown: false}}    >
+      <Stack.Navigator screenOptions={{headerShown: false}}    >
         {isLoggedIn ? (
           <Stack.Screen name="Home" component={HomeScreen} />
+          
         ) : (
           <>
             <Stack.Screen name="Onboarding" component={OnboardingScreen} />
