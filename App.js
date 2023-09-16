@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import AuthProvider from "./src/navigation/AuthProvider";
+// import AuthProvider from "./src/navigation/AuthProvider";
 import Root from "./src/navigation/Root";
 
 export default function App() {
@@ -9,9 +9,9 @@ export default function App() {
     //   <Text>Open up App.js to start working</Text>
     //   <StatusBar style="auto" />
     // </View>
-    <AuthProvider>
+    // <AuthProvider>
       <Root />
-    </AuthProvider>
+    // </AuthProvider>
   );
 }
 
